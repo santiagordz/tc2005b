@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 1</title>
+    <style>
+        section{
+            font-size: 20px;
+            padding: 0 5vw 0 1vw
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h2>
+        Santiago Rodriguez Murialdo<br />A01704109<br />santiromur@gmail.com
+      </h2>
+      <hr>
+    </header>
+    <section>
+      <ul>
+        <li>
+            <strong>¿Cuál es la diferencia entre Internet y la World Wide Web?</strong>
+            <p>
+                Internet es una inmensa red de computadoras alrededor de todo el mundo conectadas entre sí.
+                <br>
+                En cambio, la web (la World Wide Web) es una enorme colección de páginas que se asienta sobreesa red de computadoras.            
+            </p>
+        </li>
+        <li>
+            <strong>¿Cuáles son las partes de un URL?</strong>
+            <p>
+                URL significa Uniform Resource Locator y es la dirección única y específica que se asigna a cada uno de los recursos disponibles de la World Wide Web para que puedan ser localizados por el navegador y visitados por los usuarios.
+                <br><br>
+                Ya hemos hablado de que la dirección URL será la encargada de guiar al navegador hacia la información que demanda el navegante. Pero esta dirección contiene diferentes partes o informaciones, cada una con unas funciones determinadas. El formato de las URL suele ser el siguiente: https://www.edix.com/es/instituto/videos-gratis/
+                <br><br>
+                A partir del ejemplo, estos son los elementos de la URL:
+                <br>
+                <ul>
+                <li>Host: normalmente, para el protocolo http, el host es: www. <br></li>
+                <li>Dominio: corresponde con el nombre del dominio de cada sitio web, como: edix.com. <br></li>
+                <li>Puerto: define el nombre del puerto según el host. Para el protocolo http, el puerto por defecto es 80, pero esta parte suele omitirse. <br></li>
+                <li>Directorio (o ruta): define el camino que se debe seguir en el servidor. Por ejemplo: blog. <br></li>
+                <li>Nombre de archivo: define más detalladamente las características del documento: videos-gratis. <br></li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</strong>
+            <p>
+                Los métodos PUT, POST y DELETE se pueden utilizar para modificar los recursos de objeto de negocio y los recursos de estructura de objeto. Sin embargo, las reglas empresariales de un objeto pueden impedir que se actualice mediante una solicitud de la API de REST. Por ejemplo, una solicitud DELETE en un recurso de orden de trabajo puede fallar si las validaciones del objeto de negocio impiden las supresiones a causa del estado actual del objeto de negocio.
+            </p>
+        </li>
+        <li>
+            <strong>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</strong>
+            <p>
+                Post
+            </p>
+        </li>
+        <li>
+            <strong>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</strong>
+            <p>
+                Get
+            </p>
+        </li>
+        <li>
+            <strong>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</strong>
+            <p>
+                Código 200: esto no es un error HTTP, sino todo lo contrario. Significa que la página ha cargado de forma correcta.
+                En general todos los códigos de estado que sean 2XX (un 2 seguido de 2 números) indican que la carga ha ido bien.
+                <br>
+                Por tanto, si el HTTP status de tu página web es 200 todo va como la seda. 
+            </p>
+        </li>
+        <li>
+            <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</strong>
+            <p>
+                No, ya que el error 404 es posiblemente el error más común. Indica que la página que se está tratando de cargar no se ha encontrado. <br>
+                Esto puede ocurrir porque hemos escrito mal la dirección de la página web que queremos cargar, que hemos cargado la página a través de un enlace erróneo, o que la página sí que existió en su momento pero ahora ya no.
+            </p>
+        </li>
+        <li>
+            <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</strong>
+            <p>
+                Si, ya que indica un error interno, lo que se puede traducir que la página web tiene algún error en el código, por lo que el servidor no puede generar el código HTML para devolver al usuario.
+                Por ejemplo, si en un WordPress existe un error de php, se podría producir ese http error 500.
+            </p>
+        </li>
+        <li>
+            <strong>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</strong>
+            <p>
+                Los tags y atributos desaprobados son partes del estándar HTML cuyo uso ya no es recomendado. Esto sucede dado que el estándar es actualizado de vez en cuando (por ejemplo, de la versión 3.0 a la 4.0) y alguno tags o características del lenguaje son agregada, removidas o desaprobadas.
+                <br><br>
+                Ejemplos:
+                <ul>
+                    <li>applet</li>
+                    <li>dir</li>
+                    <li>isindex</li>
+                    <li>menu</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <strong>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</strong>
+            <p>
+                <ul>
+                    <li>Compatibilidad</li>
+                    <li>Soporte Multimedia</li>
+                    <li>Mejor rendimiento y soporte movil</li>
+                    <li>Mejor control de formularios</li>
+                    <li>Almacenamiento en la web</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <strong>¿Qué componentes de estructura y estilo tiene una tabla?</strong>
+            <p>
+                Una tabla HTML (table) es un conjunto de celdas (td o th) organizadas en filas (tr) que a su vez se organizan en grupos de filas (thead, tbody o tfoot). Además, la tabla puede tener una leyenda (caption) y hacer referencia a las columnas (col y colspan).
+                <br><br>
+                <img style="width: 1000px;" src="https://francescricart.com/wp-content/uploads/2018/02/thead-tbody-tfoot-caption.jpg" alt="">
+            </p>
+        </li>
+        <li>
+            <strong>¿Cuáles son los principales controles de una forma HTML5?</strong>
+            <p>
+                <ul>
+                    <li><strong>Type:</strong>Varios controles comparten la etiqueta input. En estos casos, el valor atributo type distingue si se trata de un formulario de texto, de opción, etc.</li>
+                    <li><strong>Name:</strong>Con este atributo asignamos un nombre al control. Es importante, porque al recoger los datos, podremos hacerlo a través del nombre. Además, los controles sin nombre no envían sus datos.</li>
+                    <li><strong>Value:</strong>En controles como líneas de texto, establece el valor inicial, por lo que el usuario lo puede cambiar. En otros, como botones, establece el texto que se muestra. En controles de opción, el atributo determina el valor de cada opción.</li>
+                    <li><strong>Disabled:</strong>Permite deshabilitar un control, impidiendo que el usuario interactúe con él. Se utiliza con el valor disabled (disabled="disabled").</li>
+                    <li><strong>Readonly:</strong>Hace que al control sea de sólo lectura, es decir, que no se pueda cambiar su valor. Se utiliza con el valor readonly (readonly="readonly").</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <strong>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: <a>http://html5test.com/</a></strong>
+            <p>
+                Tiene 476 de 555 posibles puntos, un gran puntaje compadardo con otros navegadores.
+            </p>
+        </li>
+        <li>
+            <strong>¿Cuál es el ciclo de vida de los sistemas de información?</strong>
+            <p>
+                <ul>
+                    <li><strong>Fase de planificación.</strong> En esta fase se prepara el diseño y posterior implementación del sistema. Es necesario definir el alcance del proyecto, justificarlo y escoger una metodología para su desarrollo. También es preciso asociar las diferentes actividades a plazos de tiempo y designar roles y responsabilidades.</li>
+                    <br><li><strong>Fase de análisis.</strong> Una vez que el equipo de proyecto se decide por una metodología de desarrollo determinada, da comienzo la segunda etapa en el ciclo de vida de un sistema de información. Es la que tiene que ver con el análisis y donde se busca concretar una serie de requisitos, que son los que regirán el nuevo sistema o los cambios a introducir en el antiguo, si con el proyecto se busca su actualización.</li>
+                    <br><li><strong>Fase de diseño.</strong> En este estadio el equipo de proyecto tendrá que determinar cómo el nuevo sistema de información cumplirá con los requisitos aplicables. Es por ello que, a estas alturas del ciclo de vida de un sistema de información conviene identificar soluciones potenciales, evaluarlas y elegir la más conveniente. Ésta será o la más efectiva, o la más eficiente en costes o la menos compleja. Una vez completadas esas tareas, habrá que continuar haciendo la selección tecnológica de software y hardware, desarrollando las especificaciones para las distintas aplicaciones y obteniendo aprobación de la gerencia para poder proceder a la implementación del nuevo sistema.</li>
+                    <br><li><strong>Fase de desarrollo.</strong> El desarrollo software marca un antes y un después en la vida del sistema y significa, además, el inicio de la producción. El cambio es una constante durante esta etapa, en la que suele ser recomendable poner el foco en la formación y capacitación de los usuarios y el equipo técnico.</li>
+                    <br><li><strong>Fase de integración y periodo de pruebas.</strong> El objetivo de esta etapa es corroborar que el diseño propuesto cumple con los requisitos de negocio establecidos. Puede ser necesario repetir las pruebas tantas veces como haga falta para evitar errores y, de hecho, conviene que el usuario final dé su conformidad con el resultado. Por último, este estadio concluye con la verificación y validación, que ayudan a asegurar la compleción del programa con éxito.</li>
+                    <br><li><strong>Fase de implementación.</strong> En esta etapa del ciclo de vida de un sistema de información hay que proceder a la instalación del hardware y software elegidos, crear las aplicaciones correspondientes, someterlas a pruebas, crear la documentación pertinente y capacitar a los usuarios. La conversión de datos es importante en este estadio, en el que ya se empieza a trabajar en el nuevo sistema.</li>
+                    <br><li><strong>Fase de mantenimiento. </strong> Esta etapa del ciclo de vida de un sistema de información está relacionada con las operaciones del día a día. Por lo general, consiste en introducir los ajustes necesarios para mejorar el rendimiento y corregir los problemas que puedan surgir. Una vez concluye la etapa de implementación se suele abrir un periodo de operación supervisada, durante el que las actividades de mantenimiento cobran una especial importancia, al orientarse a hacer backups, dar soporte a los usuarios, resolver fallos, optimizar el sistema para cuestiones relacionadas con la seguridad o la velocidad y revisar el software para garantizar la alineación con las metas del negocio.</li>
+                </ul>
+                <br>
+                <img src="https://www.gestiopolis.com/wp-content/uploads/2015/07/ciclo-de-vida-de-un-sistema-de-informacion-2.jpg" alt="">
+            </p>
+        </li>
+        <li>
+            <strong>¿Cuál es el ciclo de desarrollo de sistemas de información?</strong>
+            <p>
+                <ul>
+                    <li><strong>Fase de planeación. </strong>En esta etapa del ciclo de vida de un sistema se especifica un plan para el proyecto que guiará a todos los interesados o stakeholders a conseguir el producto especificado en el levantamiento de requerimientos.
+                    Los stakeholders corresponden a los interesados o participantes del proyecto, es decir, todas las personas involucradas en un proyecto de desarrollo de software.</li> <br>
+                    <li><strong>Fase de diseño. </strong>En esta fase del ciclo de vida de sistemas, los analistas o ingenieros de software crean un modelo abstracto del sistema a construir basado en los requerimientos funcionales y no funcionales planteados en la especificación de requerimientos. Este modelo proporciona detalles sobre arquitectura del software, estructuras de datos, interfaces y componentes que se necesitan para implementar el sistema.</li> <br>
+                    <li><strong>Fase de desarrollo. </strong>En esta fase del ciclo de vida de un sistema, se genera el código fuente en el lenguaje de programación escogido. Aquí también puede definirse la parametrización del software.
+                    Para el desarrollo del código se pueden utilizar herramientas denominadas IDE (Integrated Development Environment) o entornos de desarrollo integrado, que sirven para codificar de manera más fácil y práctica.
+                    En esta fase también pueden realizarse pruebas unitarias que definirán la versatilidad del sistema y su capacidad de detección de fallos.</li> <br>
+                    <li><strong>Fase de implementación</strong>En esta fase del ciclo de vida de sistemas se lleva a cabo la puesta en marcha del producto de software. <br> Después de implementar el sistema en el negocio, se debe entender que existe la posibilidad de fallos y, por ello, hay que tener implementado un plan de pruebas, de soporte y de mantenimiento.</li>
+                </ul>
+            </p>
+        </li>
+      </ul>
+      <hr>
+      <p>Está bonito verdad profe?</p>
+      <input type="radio">
+      <label for="radio">Si</label>
+    </section>
+    <footer>
+        <hr>
+        Usando: <strong>Visual Studio Code</strong>
+    </footer>
+  </body>
+</html>
