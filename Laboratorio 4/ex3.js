@@ -24,9 +24,9 @@ function contador(arr) {
     }
     var strF = 
     `
-    Cantidad de números negativos: ${neg.length()}
-    Cantidad de ceros: ${igual.length()}
-    Cantidad de números mayores a 0: ${mayor.length()} 
+    Cantidad de números negativos: ${neg.length} <br>
+    Cantidad de ceros: ${igual.length} <br>
+    Cantidad de números mayores a cero: ${mayor.length} 
     `
 
     return strF;
