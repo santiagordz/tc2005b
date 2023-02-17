@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_game.css" />
     <title>Solucion Problema</title>
-</head>
-<body>
-    <h1>Solucion a problema de mi eleccion</h1>
-    <h2></h2>
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Solucion a problema de mi eleccion</h1>
+      <h2>
+        Generar un objeto "Jugador" de Basketball, el cual podrá anotar puntos,
+        tomar rebotes y dar asistencias. Al final del juego, podrá consultar sus
+        totales del partido.
+      </h2>
+    </header>
+    <section id="ready">
+    </section>
+    <main>
+      <figure>
+        <img
+          id="img-shadow"
+          src="https://www.seekpng.com/png/detail/17-175797_vector-library-download-collection-of-blocking-in-high.png"
+          alt="Vector Library Download Collection Of Blocking In High - Basketball Shadow Png@seekpng.com"
+        />
+      </figure>
+      <section class="buttons-section">
+        <button id="btn-canasta">Canasta</button>
+        <button id="btn-asistencia">Asistencia</button>
+        <button id="btn-rebote">Rebote</button>
+      </section>
+      <section id="box-score">
+        <p>Puntos: <span id="puntos">0</span></p>
+        <p>Asistencias: <span id="asistencias">0</span></p>
+        <p>Rebotes: <span id="rebotes">0</span></p>
+      </section>
+      <section id="end-game">
+        <div>
+            <button>End Game</button>
+        </div>
+      </section>
+      <section id="the-end">
+        THE END
+        <div id="end-score"></div>
+      </section>
+    </main>
+    <script src="./ex6.js"></script>
+  </body>
 </html>

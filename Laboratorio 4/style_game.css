@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #555;
+}
+
+header {
+  color: #fff;
+  background: rgb(36, 17, 0);
+  background: linear-gradient(
+    117deg,
+    rgba(36, 17, 0, 1) 0%,
+    rgba(215, 131, 2, 1) 35%,
+    rgba(189, 110, 24, 1) 100%
+  );
+  padding: 1em 10em;
+  text-align: center;
+  border: 1px solid #555;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2021/01/empty-basketball-court.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-shadow{
+    height: 300px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#the-end{
+  font-size: 50px;
+  position: absolute;
+  top: 25%;
+  height: 60vh;
+  width: 60vw;
+  margin: 1px solid black;
+  background-color: blanchedalmond;
+  line-height: 100px;
+  text-align: center;
+  display: none;
+}
