@@ -1,8 +1,13 @@
-var arr3 = [];
-var size = parseInt(window.prompt("Ej3. Tamaño del arreglo"));
+function rand() {
+  return Math.floor(Math.random() * 10);
+}
+const numPool = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
 
-for (var a = 0; a < size; a++) {
-  arr3[a] = prompt("Enter array Element " + (a + 1));
+var arr3 = [];
+var size = rand()+1;
+
+for (var i = 0; i < size; i++) {
+  arr3.push(numPool[rand()]);
 }
 
 const neg = [];
@@ -20,6 +25,7 @@ function contador(arr) {
     }
   }
   var strF = `
+    <strong>Arreglo Random: [${arr3}] <br><br></strong> 
     Cantidad de números negativos: ${neg.length} <br>
     Cantidad de ceros: ${igual.length} <br>
     Cantidad de números mayores a cero: ${mayor.length} 

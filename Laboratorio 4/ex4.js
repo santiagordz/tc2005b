@@ -1,21 +1,31 @@
-const arr4 = []
-var size4 = parseInt(window.prompt("Ej4. Tamaño del arreglo"));
-
-for (var a = 0; a < size4; a++) {
-    arr4[a] = parseInt(prompt("Enter array Element " + (a + 1)));
+function rand() {
+  return Math.floor(Math.random() * 10);
 }
 
-function promedio(arr){
-    var suma = 0
-    for (const element of arr) {
-        suma += element;
+let matriz = [];
+
+let promedios = () => {
+  let suma = 0;
+  matriz = [
+    [rand(), rand(), rand()],
+    [rand(), rand(), rand()],
+    [rand(), rand(), rand()],
+  ];
+
+  document.write(`<strong>Matriz Original: <br><br>${matriz[0]} <br> ${matriz[1]} <br> ${matriz[2]}<br><br></strong>`);
+
+  for (let index = 0; index < matriz.length; index++) {
+    let row = matriz[index];
+    for (let index = 0; index < row.length; index++) {
+      suma += row[index];
     }
-    var promedio = suma / arr.length
-    return promedio
-}
+    suma = (suma/matriz.length);
+    suma = suma.toFixed(2)
+    document.write(
+      `<p style="margin:0;"> Promedio de suma de fila ${index + 1}: ${suma}</p>`
+    );
+    suma = 0;
+  }
+};
 
-document.write(
-    `
-    <p>El promedio de los números de tu arreglo es: <storng>${promedio(arr4)}</storng></p>
-    `
-)
+promedios()

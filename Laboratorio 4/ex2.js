@@ -1,22 +1,23 @@
-const num_r1 = Math.floor(Math.random() * 10);
-const num_r2 = Math.floor(Math.random() * 10);
+const num_r1 = Math.floor(Math.random() * 100);
+const num_r2 = Math.floor(Math.random() * 100);
 
-var time = new Date();
-const time_before = time.getTime();
+const start = Date.now();
 const sum2 = window.prompt(`Ej2. ${num_r1} + ${num_r2} = ...`);
-const time_after = time.getTime();
+const end = Date.now();
+
+const time = (end - start)
 
 let confirmar_suma = () => {
   if (num_r1 + num_r2 == sum2) {
     return "Muy bien, si sabes sumar !!";
   } else {
-    return "Regresate al kinder mi chavo";
+    return `<strong>Regresate al kinder mi chavo</strong>`;
   }
 };
 
 document.write(
   `
     <p>${confirmar_suma()}</p>
-    <p>Te Tadraste:  segundos</p>
+    <p>Te Tadraste: <strong>${time/1000}</strong> segundos</p>
     `
 );
