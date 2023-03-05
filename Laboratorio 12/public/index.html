@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Laboratorio 12</h1>
+      <h4>Santiago Rodriguez & Juan Pablo Cabrera</h4>
+    </header>
+    <main>
+      <section id="section-videojuegos">
+        <h2>Videojuegos:</h2>
+        <div id="tarjetas-juegos">
+          <div>
+            <img src="./assets/img/destiny2.jpg" alt="Destiny 2" />
+            <input
+              type="button"
+              value="Destiny 2"
+              onclick="location.href='/videojuegos/destiny2'"
+              name="Destiny"
+            />
+          </div>
+          <div>
+            <img src="./assets/img/minecraft.jpg" alt="Minecraft" />
+            <input
+              type="button"
+              value="Minecraft"
+              onclick="location.href='/videojuegos/minecraft'"
+            />
+          </div>
+          <div>
+            <img src="./assets/img/r6.jpg" alt="Rainbow Six" />
+            <input
+              type="button"
+              value="Rainbow 6"
+              onclick="location.href='/videojuegos/r6'"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="section-comida">
+        <h2>Comida:</h2>
+        <div id="tarjetas-comida">
+            <div>
+                <img src="./assets/img/pizza.png" alt="Pizza" />
+                <input
+                  type="button"
+                  value="Pizza"
+                  onclick="location.href='/comidas/pizza'"
+                  name="Pizza"
+                />
+              </div>
+              <div>
+                <img src="./assets/img/hamburguesa.avif" alt="Hamburguesa" />
+                <input
+                  type="button"
+                  value="Hamburguesa"
+                  onclick="location.href='/comidas/hamburguesa'"
+                  name="Hamburguesa"
+                />
+              </div> 
+        </div>
+      </section>
+    </main>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
