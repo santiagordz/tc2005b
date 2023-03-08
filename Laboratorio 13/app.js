@@ -4,16 +4,15 @@ const path = require("path");
 
 const app = express();
 
-app.set('view engine', 'ejs')
-app.set('views', 'views')
-
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const homeRoute = require('./routes/home.routes')
-const nuevaRoute = require('./routes/nueva.routes')
+app.set("view engine", "ejs");
+app.set("views", "views");
 
-// app.get('/nueva', nuevaRoute)
-app.get('/', homeRoute)
-app.get('/nueva', nuevaRoute)
+const menuRoute = require("./routes/menu.routes");
+app.use(menuRoute);
+
+const preguntasRoute = require("./routes/preguntas.routes");
+app.use("/preguntas", preguntasRoute);
 
 app.listen(3000);

@@ -11,7 +11,7 @@ const comida = [
     calorias: "750",
     precio: 320,
     imagen:
-      "https://www.hogar.mapfre.es/media/2018/09/hamburguesa-sencilla.jpg",
+      "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/aafaf8ff82d5b614e8f1522f4e355766.png",
   },
 ];
 
@@ -20,7 +20,7 @@ module.exports = class Comida {
     this.nombre = comida.nombre || "Tacos de Ojo";
     this.calorias = comida.calorias || "1000";
     this.precio = comida.precio || "25";
-    this.imagen = comida.imagen || "/";
+    this.imagen = comida.imagen || "https://bulma.io/images/placeholders/1280x960.png";
   }
 
   save() {

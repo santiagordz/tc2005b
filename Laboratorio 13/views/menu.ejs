@@ -1,0 +1,53 @@
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+
+<div class="container">
+    <h1 class="title">Restaurante: SEDENA</h1>
+    <h1 class="subtitle">By: Santiago Rodriguez M. && Juan Pablo Cabrera Q.</h1>
+<% if (comidas.length > 0) { %>
+    <% let columns = 0 %>
+    <% for (let comida of comidas) { %>
+        <% if (columns % 4 == 0) { %>
+            <div class="columns">
+                <% } %>
+                <% columns++; %>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="<%=comida.imagen%>" alt="Placeholder">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="<%=comida.imagen%>" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">
+                                        <%= comida.nombre %>
+                                    </p>
+                                    <p class="subtitle">
+                                        $<%=comida.precio%>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Este alimento contiene: <%= comida.calorias %> calorias
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+    <% } else { %>
+        <h1>No hay comidas registradas</h1>
+    <% } %>
+    <a href="/agregar" class="button is-link is-centered">Registrar Nueva Comida</a>
+    <a href="/preguntas" class="button is-warning is-centered">Preguntas LAB 13</a>
+</div>

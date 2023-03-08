@@ -1,1 +1,31 @@
-<h1>Hola</h1>
+<head>
+    <title>Agregar Comida</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body class="container">
+    <br><br><br>
+    <a class="button is-link is-danger" href="/">Regresar al menu</a>
+    <br><br>
+    <div>
+        <h1 class="title">Registrar otra comida</h1>
+        
+        <form action="/agregar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="input is-rounded" placeholder="Comida ..." required>
+            <br><br>
+
+            <label for="calorias">Calorias:</label>
+            <input type="text" name="calorias" id="calorias" class="input is-rounded" placeholder="Calorias ..." required>
+            <br><br>
+
+            <label for="precio">Precio:</label>
+            <input type="text" name="precio" id="precio" class="input is-rounded" placeholder="Precio ..." required>
+            <br><br>
+
+            <div class="container">
+                <input class="button is-link is-rounded" type="submit" value="Registrar">
+            </div>
+        </form>
+    </div>
+</body>
